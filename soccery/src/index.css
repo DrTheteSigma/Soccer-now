@@ -11,3 +11,94 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Signpage{
+  background-image: url("https://playorlandonorth.com/uploads/images/_masthead/IC8A5032.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 1200px;
+  font-size: xx-large;
+  color: rgb(0, 0, 0);
+}
+.container { 
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container input { 
+  width: 50%;
+  height: 8vh;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.container button { 
+  width: 200px;
+  height: 5vh;
+  margin: 20px auto;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid var(--dark);
+  border-radius: 3px;
+}
+
+.container label{
+  margin-right: 10px;
+}
+
+.Home{
+  display: flex;
+
+}
+
+.Home-left{
+width: 50%;
+text-align: center;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+background-image: url("https://pbs.twimg.com/media/B-O7w2SIMAAingw.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+transition:  .5s;
+
+}
+.Home-left:hover{
+  width: 70%;
+}
+
+.Home-right{
+  width: 50%;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("https://i.dailymail.co.uk/i/pix/2017/08/10/06/431FB41700000578-4776628-The_new_circular_dressing_room_was_designed_having_consulted_man-a-1_1502341572616.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: width .5s;
+
+  }
+  .Home-right:hover{
+    width: 70%;
+  }
+
+  .HomeBtn{
+    width: 20vh;
+    margin: auto;
+    height: 50px;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    background-color: black;
+    font-weight: light;
+    cursor: pointer;
+  }
