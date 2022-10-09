@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Mainpage = () => {
   return (
@@ -10,7 +11,9 @@ const Mainpage = () => {
       </div>
 
       <div className='Home-right'>
-        <button className="HomeBtn">Create New Match</button>
+        <Link to={"/create"}>
+          <button className="HomeBtn">Create New Match</button>
+        </Link>
       </div>
 
     </div>

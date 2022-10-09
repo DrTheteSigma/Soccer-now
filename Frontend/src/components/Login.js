@@ -1,20 +1,24 @@
-
 import React, { useState } from 'react'
-
-
-const Signup = () => {
-
+import { auth } from "../config/firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom"; 
+const Signin = () => {
+  const navigate = useNavigate();
   const  [email, setEmail] = useState("")
   const  [password, setPassword] = useState("")
-  
-  
+  const signIn = () => { 
+    signInWithEmailAndPassword(auth, email, password)
+    .then(() => {
+      navigate("/", {replace: true})
+    })
+    .catch(err => console.error(err))
+};
   
   return (
     <div className='Signpage'>
     <div className='container'>
-        <h1>Sign up!</h1>
-        <div>Already have an account</div>
-
+        <h1>Sign In!</h1>
+          <a href="/create-account">Don't have an account?</a>
         <form >
             <div>
                 <label>Email address</label>
@@ -25,15 +29,12 @@ const Signup = () => {
                 <label>Password</label>
                 <input type="password" onChange={(e)=>{setPassword(e.target.value)}} value={password}></input>
             </div>
-            <button>Sign in</button>
-    
+            <button type='button' onClick={signIn}>Sign in</button>
+
         </form>
-
-
-
     </div>
     </div>
   )
 }
 
-export default Signup
+export default Signin
