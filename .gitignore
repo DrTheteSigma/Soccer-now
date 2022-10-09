@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Firebase Admin Private Key
+soccer-game-auth-firebase-adminsdk-lq75p-1a46e075dc.json
