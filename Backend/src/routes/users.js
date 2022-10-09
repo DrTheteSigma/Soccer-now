@@ -10,5 +10,8 @@ router.get("/getById", users.getUserById);
 //Get One by email
 router.get("/getByEmail", users.getUserByEmail);
 
+//Create
+router.post("/create", users.createUser);
+
 const usersRouter = router;
 module.exports = usersRouter;

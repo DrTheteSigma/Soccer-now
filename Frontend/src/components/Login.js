@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom"
-
+import { auth } from "../config/firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom"; 
 const Signin = () => {
-
+  const navigate = useNavigate();
   const  [email, setEmail] = useState("")
   const  [password, setPassword] = useState("")
-  
-  
+  const signIn = () => { 
+    signInWithEmailAndPassword(auth, email, password)
+    .then(() => {
+      navigate("/", {replace: true})
+    })
+    .catch(err => console.error(err))
+};
   
   return (
     <div className='Signpage'>
@@ -23,12 +29,9 @@ const Signin = () => {
                 <label>Password</label>
                 <input type="password" onChange={(e)=>{setPassword(e.target.value)}} value={password}></input>
             </div>
-            <button>Sign in</button>
+            <button type='button' onClick={signIn}>Sign in</button>
 
         </form>
-
-
-
     </div>
     </div>
   )

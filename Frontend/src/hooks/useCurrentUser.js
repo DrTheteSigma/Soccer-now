@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { auth } from "../components/Firebase";
+import { auth } from "../config/firebase";
 import axios from "axios";
 
 

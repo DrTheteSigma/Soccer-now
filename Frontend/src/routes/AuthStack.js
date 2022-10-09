@@ -1,6 +1,6 @@
-// import { Routes, Route } from 'react-router-dom';
-import Login from './Login';
-import Signup from "./Signup";
+import { Routes, Route } from 'react-router-dom';
+import Signin from "../components/Login";
+import Signup from "../components/Signup";
 import App from "../App";
 
 export default function AuthStack(){
@@ -8,7 +8,7 @@ export default function AuthStack(){
         <Routes>
             <Route path="/" element={<App/>}></Route>
             <Route path="/create-account" element={<Signup/>}></Route>
-            <Route path="/login" element={<Login/>}></Route>
+            {/* <Route path="/login" element={<Signin/>}></Route> */}
         </Routes>
     )
 }
