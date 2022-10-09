@@ -42,6 +42,11 @@ label{
   padding: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
 .Signpage{
   background-image: url("https://playorlandonorth.com/uploads/images/_masthead/IC8A5032.jpg");
   background-repeat: no-repeat;

@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react'
-
+import { Link } from "react-router-dom"
 
 const Signin = () => {
 
@@ -13,8 +12,7 @@ const Signin = () => {
     <div className='Signpage'>
     <div className='container'>
         <h1>Sign In!</h1>
-        <div>Don't have an account?</div>
-
+          <a href="/create-account">Don't have an account?</a>
         <form >
             <div>
                 <label>Email address</label>
