@@ -102,3 +102,28 @@ transition:  .5s;
     font-weight: light;
     cursor: pointer;
   }
+
+  .Dashboard{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    
+    flex-wrap: wrap;
+    background: lightskyblue;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-between  ;
+    min-width: 65%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    /* text-align: center; */
+    padding: 20px;
+    height: fit-content;
+    border-radius: 20px;
+  }
