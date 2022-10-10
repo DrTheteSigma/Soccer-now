@@ -164,3 +164,81 @@ transition:  .5s;
     height: fit-content;
     border-radius: 20px;
   }
+
+  .formation-background{
+    background-image: url(https://www.greenlawnfertilizing.com/wp-content/uploads/2020/07/grass-background-stockpack-adobe-stock-scaled.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .square{
+    /* background-color: black; */
+    display: flex;
+    height: 25vh;
+  }
+  
+  .goalkeeper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .attack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .defence{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .midfeild{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .goali{
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    font-size: 20px;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .defender{
+    background-color: white;
+    font-size: 20px;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .midfeilder{
+    background-color: white;
+    font-size: 20px;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .striker{
+    background-color: white;
+    font-size: 20px;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .image-max{
+    max-width: 70px;
+    max-height: 70px;
+    margin: 5px;
+  }
+  
+  .cursor{
+    cursor:pointer;
+  }
+  

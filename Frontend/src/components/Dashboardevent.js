@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Dashboardevent = ({_id, date, location, description}) => {
     
@@ -7,7 +8,9 @@ const Dashboardevent = ({_id, date, location, description}) => {
         <div>{new Date(date).toString()}</div>
         <div>{location}</div>
         <div>{description}</div>
-        <button type='submit'>Join</button>
+        <Link to={"/formation"}>
+          <button type='submit'>Join</button>
+        </Link>
   
     </div>
   )
