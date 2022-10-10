@@ -4,11 +4,10 @@ const Dashboardevent = ({_id, date, location, description}) => {
     
   return (
     <div className='card'>
-        <div>{date}</div>
+        <div>{new Date(date).toString()}</div>
         <div>{location}</div>
         <div>{description}</div>
-        
-    
+  
     </div>
   )
 }

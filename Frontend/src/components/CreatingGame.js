@@ -17,8 +17,6 @@ export default function CreatingGame() {
       navigate("/", {replace: true});
   }
 
-  console.log(date)
-
   return (
 
     <div className="create-game-background">
