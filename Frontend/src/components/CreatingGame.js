@@ -17,6 +17,7 @@ export default function CreatingGame() {
       navigate("/", {replace: true});
   }
 
+  console.log(date)
 
   return (
 
@@ -26,13 +27,13 @@ export default function CreatingGame() {
           <div className='flex'>
             <form className='form-background'>
                 <label>Date</label> 
-                <input onClick={(e) => {setDate(e.target.value)}} type="datetime-local"></input>
+                <input onChange={(e) => {setDate(e.target.value)}} type="datetime-local"></input>
                 <br/>
                 <label>Field Location</label> 
-                <input onClick={(e) => {setLocation(e.target.value)}} type="location"></input>
+                <input onChange={(e) => {setLocation(e.target.value)}} type="location"></input>
                 <br/>
                 <label>Description</label> 
-                <textarea onClick={(e) => {setDescription(e.target.value)}}></textarea>
+                <textarea onChange={(e) => {setDescription(e.target.value)}}></textarea>
                 <br></br>
                 <button onClick={createMatch} type='button'>Submit</button>
             </form>

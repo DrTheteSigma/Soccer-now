@@ -13,10 +13,6 @@ const matchSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    mode: {
-        type: String,
-        required: true
-    },
     description: {
         type: String
     }

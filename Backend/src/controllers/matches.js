@@ -43,14 +43,12 @@ exports.getMatchesByUserId = async (req, res, next) => {
 //Create an match
 exports.createMatch = async (req, res, next) => {
     try {
-        if (!req.body.date || typeof req.body.date !== "string") throw new ServerError("date is invalid", 400);
+        if (!req.body.date) throw new ServerError("date is invalid", 400);
         if (!req.body.location || typeof req.body.location !== "string") throw new ServerError("locaton is invalid", 400);
-        if (!req.body.mode || typeof req.body.mode !== "string") throw new ServerError("mode is invalid", 400);
 
         const newMatch = new Match({
             date: req.body.date,
             location: req.body.location,
-            mode: req.body.mode
         });
         const createdMatch = await newMatch.save();
         res.status(201).send(createdMatch);

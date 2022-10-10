@@ -5,8 +5,6 @@ import "../styles/Navbar.css"
 const Navbar = () => {
   return (
     <nav className='navbar'>
-
-
         <div>
           <Link style={{textDecoration: 'none'}}  to="/">
            <h2 className='logo'>Soccery</h2>
@@ -24,8 +22,6 @@ const Navbar = () => {
            <button className='btn sign-up'>Sign up</button>
           </Link>
         </div>
-        
-
     </nav>
 
   )
