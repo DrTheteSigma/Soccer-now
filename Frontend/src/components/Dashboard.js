@@ -22,7 +22,7 @@ const Dashboard = () => {
         return <Dashboardevent key={event._id} _id={event._id} date={event.date} location={event.location} description={event.description}></Dashboardevent>
     })}
       </div>
-
+    
   )
 }
 

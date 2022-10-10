@@ -17,7 +17,7 @@ const Signin = () => {
   return (
     <div className='Signpage'>
     <div className='container'>
-        <h1>Sign In!</h1>
+        <h1>Soccery</h1>
           <a href="/create-account">Don't have an account?</a>
         <form >
             <div>

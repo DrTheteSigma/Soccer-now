@@ -7,6 +7,7 @@ const Dashboardevent = ({_id, date, location, description}) => {
         <div>{new Date(date).toString()}</div>
         <div>{location}</div>
         <div>{description}</div>
+        <button type='submit'>Join</button>
   
     </div>
   )
